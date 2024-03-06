@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+            id="Hospital_root_menu"
+            web_icon="hospital,static/description/icon.png"
+            name="Hospital"
+            sequence="0"/>
+
+    <menuitem id="patient_master_menu"
+              name="Patient Details"
+              parent="Hospital_root_menu"
+              sequence="0"/>
+
+    <menuitem id="kids_master_menu"
+              name="kids Details"
+              parent="Hospital_root_menu"
+              sequence="0"/>
+
+    <menuitem name="Appointments"
+              id="appointment_master_menu"
+              parent="Hospital_root_menu"
+              action="action_hospital_appointment_menu"
+              sequence="0"/>
+
+    <menuitem id="lab_master_menu"
+              name="Test lab"
+              parent="Hospital_root_menu"
+              sequence="0"/>
+
+    <menuitem id="doctor_master_menu"
+              name="Doctor's Details"
+              parent="Hospital_root_menu"
+              sequence="0"/>
+
+</odoo>
